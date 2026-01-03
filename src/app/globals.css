@@ -1,0 +1,198 @@
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+
+
+:root {
+  --background: #020611;
+  --foreground: #171717;
+}
+
+@theme inline {
+
+  --breakpoint-xs: 375px;
+  --breakpoint-mmd: 900px;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --shadow-custom-white: 0px -2px 1px rgba(255,255,255,0.8);
+
+  --color-dark-disabled: #5F6577;
+  --color-dark-disabled-opacity-6: rgba(95, 101, 119, 0.6);
+  --color-dark-disabled-opacity-3: rgba(95, 101, 119, 0.3);
+  --color-dark-disabled-opacity-1: rgba(95, 101, 119, 0.2);
+  --color-half-enabled: #A8AFC1;
+  --color-pink-middle: #829FFF; 
+  --color-pink-middle2: #B8C4FF; 
+  --color-pink-middle3: #98B0FF; 
+  --color-pink-middle4: #BBB8FF; 
+  --color-red-pink: #F9DBFF; 
+  --color-cyan-middle: #A6D6FF; 
+  --color-green-middle: #8BFFC5; 
+  --color-green-middle2: #5CE099; 
+  --color-green-middle3: #97FFC7; 
+  --color-green-middle4: #A2FFCD; 
+  --color-yellow-middle: #FFDA44; 
+  --color-yellow-middle-opacity-1: rgba(255,218,68,0.15); 
+  --color-yellow-middle2: #FFECB8; 
+  --color-yellow-middle3: #FFF5D9; 
+  --color-yellow-dark: #FFCAA2; 
+  --color-red-middle: #FF6367; 
+  --color-red-opacity-005: rgba(255,99,103, 0.05); 
+  --color-red-opacity-015: rgba(255,99,103, 0.15); 
+  --color-red-opacity-002: rgba(255,99,103, 0.02); 
+  --color-red-opacity-3: rgba(255,99,103, 0.3); 
+  --color-red-middle2: #FF9292; 
+  --color-red-middle3: #FF4146; 
+  --color-dark-yellow: #EC8E18; 
+  --color-dark-green: #425F7C; 
+  --color-dark-gray-opacity-4: rgba(11, 14, 24,0.4); 
+  --color-dark-gray-opacity-5: rgba(138, 146, 169,0.5); 
+  --color-pink-opacity-1: rgba(130, 159, 255, 0.1); 
+  --color-green-opacity-005: rgba(16, 155, 80, 0.05);
+  --color-green-opacity-015: rgba(145, 255, 195, 0.15);
+  --color-green-opacity-002: rgba(145, 255, 195, 0.02);
+  --color-green-opacity-1: rgba(16, 155, 80, 0.1);
+  --color-green-opacity-3: rgba(162, 255, 205, 0.3);
+  --color-gray-common: #0f121a; 
+  --color-red-common: #D94549; 
+  --color-dark-gray: #191D2A; 
+  --color-dark-gray2: #161a26; 
+  --color-dark-gray3: #8990A3; 
+  --color-dark-gray4: #131620; 
+  --color-dark-gray5: #050913; 
+  --color-dark-gray6: #3D4251; 
+  --color-dark-gray7: #1F222D; 
+  --color-dark-gray8: #252A3C; 
+  --color-dark-gray9: #8A92A9; 
+  --color-dark-gray10: #4B5060; 
+  --color-cyan-white: #CEEBFF; 
+  --color-cyan-white2: #ADD9FF; 
+  --color-gradient-dark-gray: #111626;
+  --color-gradient-black-gray: #0B0E18;
+  --color-black-gray: #020611;
+  --color-green-from: #69FFAE;
+  --color-green-to: #28A561;
+  --color-green-border: #52DA80;
+  --color-green-table: #91FFC3;
+  --color-yellow-table: #FFF0C6;
+  --color-red-yellow: #FFA861;
+  --color-red-yellow2: #FFB370;
+  
+  
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+* {
+  scrollbar-color: #111626 transparent;
+  scrollbar-width: none;
+  
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Manrope_Semibold;
+}
+
+.text-size-16 {
+  font-size: 16px;
+}
+
+.text-size-15 {
+  font-size: 15px;
+}
+
+.text-size-14 {
+  font-size: 14px;
+}
+
+.text-size-13 {
+  font-size: 13px;
+}
+
+.text-size-12 {
+  font-size: 12px;
+}
+
+.text-size-11 {
+  font-size: 11px;
+}
+
+.text-size-10 {
+  font-size: 10px;
+}
+
+.text-size-9 {
+  font-size: 9px;
+}
+
+.text-size-8 {
+  font-size: 8px;
+}
+
+.font-manrope-medium {
+  font-family: 'Manrope_Medium';
+}
+
+.font-manrope-bold {
+  font-family: 'Manrope_Bold';
+}
+
+.font-manrope-extra-bold {
+  font-family: 'Manrope_ExtraBold';
+}
+
+.font-federation-bold {
+  font-family: 'Federation_Bold';
+}
+
+@font-face {
+  font-family: 'Manrope_Medium';
+  src: url('/fonts/manrope-medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope_Semibold';
+  src: url('/fonts/manrope-semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope_Bold';
+  src: url('/fonts/manrope-bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope_ExtraBold';
+  src: url('/fonts/manrope-extrabold.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Federation_Bold';
+  src: url('/fonts/Federation Kalin.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
